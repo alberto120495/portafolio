@@ -1,0 +1,18 @@
+.portafolio__section {
+  display: flex;
+  padding: 30px;
+}
+
+.portafolio__title {
+  color: #19d7f8;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (max-width: 970px) {
+  .portafolio__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

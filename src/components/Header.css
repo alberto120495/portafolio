@@ -1,0 +1,100 @@
+.header {
+  color: white;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  border-bottom: 1px solid lightgray;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header > img {
+  object-fit: contain;
+  height: 80px;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header__icon {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  cursor: pointer;
+}
+
+.header__icon > .MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.header__icon > p {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__icon:hover > p {
+  display: inline-flex;
+  color: #8ecae6;
+}
+
+.header__icon--active > p {
+  display: inline-flex !important;
+  color: #8ecae6;
+}
+
+.header__name {
+  font-family: sans-serif;
+  letter-spacing: 6px;
+  border-left: 1px solid white;
+}
+
+.play-btn {
+  margin-left: 10px;
+  display: inline-flex;
+}
+
+.play-btn-inner {
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#023047, #023047),
+    radial-gradient(circle at top left, #ffb703, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.play-btn-inner b {
+  padding: 10px 0;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
