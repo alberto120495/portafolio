@@ -1,11 +1,52 @@
+.about {
+  overflow: hidden;
+}
+
+.imagen-cv {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+.imagen-cv > img {
+  margin-left: -40px;
+}
+.imagen-cv > .download {
+  margin-left: 40px;
+  margin-top: 28px;
+  background: #ffb703;
+  font-family: "Codec", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #023047;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0.2em 1em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  transition: background 0.8s ease-out;
+  border-radius: 10px;
+}
+.download > a {
+  margin-left: 5px;
+}
+
+.download:hover {
+  background-color: #19d7f8;
+}
+
 .about__title {
-  color: #19d7f8;
+  color: #ccd6f6;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-top: 10px;
 }
 
 .about__section {
+  margin-top: -30px;
   display: flex;
   padding: 30px;
   justify-content: space-between;
@@ -14,7 +55,6 @@
 .profile-pic {
   width: 120px;
   height: 120px;
-  border-radius: 100%;
 }
 
 .about__sectionMe {
@@ -24,6 +64,7 @@
 }
 .about__sectionMePersonal {
   font-size: 1.1em;
+  text-align: justify;
 }
 
 .about__sectionTitles {
@@ -36,29 +77,6 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-}
-.download {
-  margin-top: 28px;
-  background: #ffb703;
-  font-family: "Codec", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #023047;
-  border: none;
-  display: flex;
-  align-items: center;
-  appearance: none;
-  padding: 1em 0.2em 1em;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  transition: background 0.8s ease-out;
-  width: 23%;
-  height: 15%;
-}
-.download > a {
-  margin-left: 5px;
-}
-
-.download:hover {
-  background-color: #19d7f8;
 }
 
 ul > li {

@@ -1,5 +1,9 @@
+.contact {
+  height: 100%;
+}
 .contact__title {
-  color: #19d7f8;
+  margin-top: 30px;
+  color: #ccd6f6;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -12,6 +16,22 @@
   padding: 10px;
   color: white;
 }
+
+.contact__details > h2 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.contact__details > h3 {
+  color: #ccd6f6;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
 .contact__details > p {
   font-size: 1.2em;
   margin-top: 3px;
@@ -25,6 +45,10 @@
   font-size: 1.5em;
   color: white;
   padding: 10px;
+}
+
+.contact__info > p {
+  text-align: center;
 }
 
 .contact__infoRedes {

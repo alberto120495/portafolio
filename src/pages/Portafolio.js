@@ -7,12 +7,15 @@ import amazon from "../images/amazon.png";
 import covid from "../images/covid.png";
 import Google from "../images/Google.png";
 import hulu from "../images/hulu.png";
-import messenger from "../images/messenger.png";
+import slack from "../images/slack.png";
 import netflix from "../images/netflix.png";
-import tiktok from "../images/tiktok.png";
-import twitter from "../images/twitter.png";
+import robin from "../images/robin.png";
+import linkedin from "../images/linkedin.png";
 import whatsapp from "../images/whatsapp.png";
-import youtube from "../images/youtube.png";
+import gmail from "../images/gmail.png";
+import LaraFoto from "../images/LaraFoto.png";
+import AnimeFY from "../images/AnimeFY.png";
+import snapchat from "../images/snapchat.png";
 
 function Portafolio() {
   return (
@@ -22,14 +25,22 @@ function Portafolio() {
       </center>
 
       <div className="portafolio__section">
-        <a href="https://clone-105a2.web.app/" target="_blank">
+        <a
+          href="https://clone-105a2.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={amazon}
             title="Amazon Clone"
             description="Amazon clone realizado con React, con funcion de login, agregar al carrito y proceso de compras. (Click DEMO)"
           />
         </a>
-        <a href="https://airbnb-clone-96c30.web.app/" target="_blank">
+        <a
+          href="https://airbnb-clone-96c30.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={airbnb}
             title="Airbnb Clone"
@@ -37,7 +48,11 @@ function Portafolio() {
           />
         </a>
 
-        <a href="https://covid-19-tracker-adc50.web.app/" target="_blank">
+        <a
+          href="https://covid-19-tracker-adc50.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={covid}
             title="Covid Tracker"
@@ -46,22 +61,69 @@ function Portafolio() {
         </a>
       </div>
       <div className="portafolio__section">
-        <a href="https://whatsapp-clone-9161d.web.app/" target="_blank">
+        <a
+          href="https://netflix-challenge-9b611.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            src={netflix}
+            title="Netflix Clone"
+            description="Netflix clone realizado con React y Redux, con funcion de login, visualizacion aletoria de portadas de peliculas y si esta disponible; visualizador de trailers. (Click DEMO)"
+          />
+        </a>
+        <a
+          href="https://hulu-clone-c2bc6.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            src={hulu}
+            title="Hulu Clone"
+            description="Hulo clone realizado con React, con funcion para visualizar portadas de peliculas, utilizando una API para conseguir las portadas. (Click DEMO)"
+          />
+        </a>
+        <a
+          href="https://snapchat-clone-7c145.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            src={snapchat}
+            title="Snapchat Clone"
+            description="Snapchat clone realizado con React y Redux, con funcion para tomar capturas directo de la webcam, sesion con Google y mas. (Click DEMO)"
+          />
+        </a>
+      </div>
+      <div className="portafolio__section">
+        <a
+          href="https://whatsapp-clone-9161d.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={whatsapp}
             title="Whatsapp Clone"
             description="Whatsapp clone realizado con React, con funcion de login con google, base de datos en tiempo real y creacion de varios canales (Click DEMO)"
           />
         </a>
-        <a href="https://messenger-clone-aad32.web.app/" target="_blank">
+        <a
+          href="https://slack-clone-6f122.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
-            src={messenger}
-            title="Messenger Clone"
-            description="Messenger clone realizado con React, con funcion de  identificacion de usuario y base de datos en tiempo real.(Click DEMO)"
+            src={slack}
+            title="Slack Clone"
+            description="Slack clone realizado con React y Redux, con funcion de login con google, identificacion de usuario, creacion de canales, base de datos en tiempo real en firebase y loader.(Click DEMO)"
           />
         </a>
 
-        <a href="https://clone-42272.web.app/" target="_blank">
+        <a
+          href="https://clone-42272.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={Google}
             title="Google Clone"
@@ -70,52 +132,63 @@ function Portafolio() {
         </a>
       </div>
       <div className="portafolio__section">
-        <a href="https://netflix-clone-479f5.web.app/" target="_blank">
-          <Card
-            src={netflix}
-            title="Netflix Clone"
-            description="Netflix clone realizado con React, con funcion aleatoria para visualizar portadas de peliculas y si esta disponible; visualizador de trailers. (Click DEMO)"
-          />
-        </a>
-        <a href="https://hulu-clone-c2bc6.web.app/" target="_blank">
-          <Card
-            src={hulu}
-            title="Hulu Clone"
-            description="Hulo clone realizado con React, con funcion para visualizar portadas de peliculas, utilizando una API para conseguir las portadas. (Click DEMO)"
-          />
-        </a>
-
-        <a href="https://clone-3c26e.web.app/" target="_blank">
-          <Card
-            src={youtube}
-            title="Youtube Clone"
-            description="Youtube clone realizado con React, con funcion de busqueda ya PREDEFINIDA, con diseño muy similar a la verdadera aplicacion. (Click DEMO)"
-          />
-        </a>
-      </div>
-      <div className="portafolio__section">
-        <a href="https://facebook-clone-d4ea6.web.app/" target="_blank">
+        <a
+          href="https://facebook-clone-d4ea6.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             src={FB}
             title="Facebook Clone"
             description="Facebook clone realizado con React, con funcion para publicar posts con o sin imagenes, base de datos en tiempo real. (Click DEMO)"
           />
         </a>
-        <a href="https://twitter-clone-eb11d.web.app/" target="_blank">
+        <a
+          href="https://clone-e9d70.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
-            src={twitter}
-            title="Twitter Clone"
-            description="Twitter clone realizado con React, con funcion para publicar posts con o sin imagenes, base de datos en tiempo real y contenido eembebido. (Click DEMO)"
+            src={linkedin}
+            title="Linkedin Clone"
+            description="Linkedin clone realizado con React y Redux, con funcion de login con correo y contraseña y capacidad para publicar posts, un diseño minimalista y base de datos en tiempo real. (Click DEMO)"
+          />
+        </a>
+        <a
+          href="https://clone-8bc36.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            src={gmail}
+            title="Gmail Clone"
+            description="Gmail clone realizado con React y Redux, con funcion de login, enviar mensajes demostrativos a tu inbox, cuenta con un diseño muy similar a la verdadera aplicacion. (Click DEMO)"
+          />
+        </a>
+      </div>
+      <div className="portafolio__section">
+        <a
+          href="https://robinhood-clone-6f22e.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            src={robin}
+            title="Robinhood Clone"
+            description="Robinhood clone realizado con React, con funcion para visualizar datos en tiempo real de las acciones de diferentes marcas, una interfaz moderna, minimalista y funcional (Datos de una API). (Click DEMO)"
           />
         </a>
 
-        <a href="https://tiktok-clone-7b49d.web.app/" target="_blank">
-          <Card
-            src={tiktok}
-            title="TikTok Clone"
-            description="Tiktok clone realizado con React, con funcion para visualizar nombre de canciones y spin de disco con animacion *Videos sacados de TikTok. (Click DEMO)"
-          />
-        </a>
+        <Card
+          src={AnimeFY}
+          title="Aplicacion para ver anime online"
+          description="Aplicacion realizada con PHP, con funcion para gestionar usuarios, publicar con Facebook y reproduccion de video online. (Aplicacion NO en Hosting)"
+        />
+        <Card
+          src={LaraFoto}
+          title="LaraFoto"
+          description="Aplicacion realizada con Laravel, con funcion de login, publicar, comentar y dar likes. (Aplicacion NO en Hosting)"
+        />
       </div>
     </div>
   );

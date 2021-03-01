@@ -1,43 +1,64 @@
 .home {
   text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
+.typed-text {
+  font-size: 2rem;
+  color: white;
+}
 .home__body {
   display: flex;
 }
 
 .home > h1 {
-  color: white;
-  font-size: 7.2vw;
-  letter-spacing: -2px;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
-  margin: 0 auto 18px auto;
+  color: #ccd6f6;
+  font-size: 2.5em;
+  font-family: "palatino linotype", palatino, serif;
+  text-align: center;
+  letter-spacing: 5.6pt;
+  word-spacing: -2.4pt;
+  line-height: 1.2;
+  text-shadow: 1px 1px 1px #042045;
+  margin: 30px auto 10px 0;
 }
 
-.home__presentacion > h2 {
-  color: #19dafa;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 .home__presentacion {
   font-size: 2.2vw;
   padding: 20px;
   margin: 10px;
   border-width: 3px;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #ffb703, #19d7f8) 1 100%;
+  border-image: linear-gradient(to bottom, #fd00da, #19d7f8) 1 100%;
   min-width: 35%;
 }
 
-.home__presentacion > .subtitle {
+.home__presentacion > h2 {
   color: white;
+  font-size: 1.3em;
+  font-family: "times new roman", times, serif;
+  text-align: center;
+  letter-spacing: 5.6pt;
+  word-spacing: -2.4pt;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #042045;
+}
+
+.home__presentacion > .subtitle {
+  color: #8892b0;
   font-size: 1.3em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0.5em 0;
+  text-shadow: 1px 1px 1px #042045;
 }
 
 .home__presentacion > .descripcion {
-  color: #a8a8a8;
+  display: block;
+  text-align: justify;
+  color: #ccd6f6;
+  font-size: 1.4em;
+
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -47,10 +68,11 @@ blockquote {
   font-size: 2.5vw;
   padding: 20px;
   color: white;
+  text-shadow: 1px 1px 1px #042045;
 }
 
 blockquote > .frase {
-  color: #19dafa;
+  color: white;
 }
 
 cite {
@@ -60,6 +82,7 @@ cite {
   margin-left: 70%;
   margin-top: 15px;
   color: white;
+  text-shadow: 1px 1px 1px #042045;
 }
 
 .home__card {
@@ -67,17 +90,42 @@ cite {
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 20px;
+}
+.img-con {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.oculto {
+  color: white;
+  font-size: 1vw;
+  text-align: left;
+  display: none;
+  transition: all 1s ease-in-out;
 }
 
-.home__card > img {
+.img-con > img {
   margin-top: 10px;
-  width: 25%;
+  width: 35%;
+  height: 70%;
   margin: 10px;
   border-radius: 10%;
+  transition: all 0.5s ease-in-out;
 }
 
-.home__card > img:hover {
-  box-shadow: 0 0 2px 1px rgba(36, 199, 253, 0.685);
+.img-con > img:hover ~ .oculto {
+  display: flex;
+}
+
+.home__card > .img-con > img:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px #19d7f8;
+  -webkit-box-shadow: 0px 0px 5px 5px #19d7f8;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 @media (max-width: 850px) {
